@@ -1788,6 +1788,8 @@ const dmMachine = setup({
           }
         },
 
+
+        // OPTIONAL: it is not used, but it could be implement with the same logic of ConfirmQuit-SpeakingConfirmQuit-ConfirmQuitListen
         ConfirmRestartListen: {
           entry: ["sst_listen"],
           on: {
