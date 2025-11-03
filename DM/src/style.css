@@ -1,0 +1,213 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* =============================== */
+/* 🔸 BOT STATUS STYLES - INCREASED SIZE */
+/* =============================== */
+.bot-image {
+  width: 158px; /* Increased from 120px by 38px (1cm) */
+  height: 158px; /* Increased from 120px by 38px (1cm) */
+  object-fit: contain;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  border: 3px solid #666;
+  box-shadow: 0 0 15px rgba(102, 102, 102, 0.3);
+}
+
+.bot-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.status-text {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  min-height: 18px;
+  padding: 6px 10px;
+  border-radius: 15px;
+  background: rgba(102, 102, 102, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* =============================== */
+/* 🔸 BUTTON ENHANCEMENTS */
+/* =============================== */
+#counter {
+  font-size: 1.1em;
+  padding: 0.8em 1.5em;
+  background: linear-gradient(45deg, #646cff, #535bf2);
+  border: none;
+  color: white;
+}
+
+#counter:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 15px rgba(100, 108, 255, 0.4);
+}
+
+/* =============================== */
+/* 🔸 STATUS INDICATORS */
+/* =============================== */
+.status {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.status p {
+  margin: 8px 0;
+  font-size: 0.9em;
+}
+
+.mic-state {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* =============================== */
+/* 🔸 MAIN CONTAINER */
+/* =============================== */
+.main-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* =============================== */
+/* 🔸 RESPONSIVE DESIGN */
+/* =============================== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  .bot-image {
+    width: 138px; /* Increased from 100px by 38px */
+    height: 138px; /* Increased from 100px by 38px */
+  }
+}
+
+@media (max-width: 480px) {
+  #app {
+    padding: 1rem;
+  }
+  
+  .card {
+    padding: 1em;
+  }
+  
+  .bot-image {
+    width: 118px; /* Increased from 80px by 38px */
+    height: 118px; /* Increased from 80px by 38px */
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+}
